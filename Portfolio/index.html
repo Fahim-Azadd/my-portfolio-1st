@@ -1,0 +1,580 @@
+<!-- =========================================================
+  MD. FAHIM AZAD — Portfolio
+  File: index.html
+  Purpose: Single-page portfolio for skills, projects, experience,
+           education, training, certifications, organizations, and contact.
+  Tech: Bootstrap 5.3, Bootstrap Icons, custom style.css, script.js
+========================================================= -->
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MD. FAHIM AZAD | CSE Portfolio</title>
+  <meta name="description" content="Portfolio of MD. FAHIM AZAD — CSE student, web developer, and problem solver." />
+  <!-- Fonts & Vendor CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-blur border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-cpu me-2"></i>MD. FAHIM AZAD
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#training">Training</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#orgs">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-secondary">
+              <i class="bi bi-moon-stars"></i> <span class="d-none d-sm-inline">Theme</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============== HERO / INTRO ============== -->
+  <header id="home" class="hero position-relative text-center">
+    <div class="gradient-bg"></div>
+    <div class="container py-5">
+      <div class="row align-items-center gy-4">
+        <!-- Portrait (with stylish frame) -->
+        <div class="col-lg-5">
+          <div class="avatar-frame">
+            <img src="Images/Me1st.jpeg" alt="Portrait of MD. FAHIM AZAD" class="avatar-xxl shadow-soft bg-body rounded-4">
+          </div>
+        </div>
+        <!-- Headline & CTAs -->
+        <div class="col-lg-7 text-lg-start">
+          <span class="badge badge-soft rounded-pill px-3 py-2 mb-2">
+            <i class="bi bi-mortarboard me-1"></i> CSE Student
+          </span>
+          <h1 class="display-5 fw-extrabold mb-2">
+            Hi, I'm MD. FAHIM AZAD <span class="wave">👋</span>
+          </h1>
+          <p class="lead text-secondary mb-3">
+            I design and build modern, accessible, and performant web apps.
+          </p>
+          <p class="lead fw-semibold">
+            <span id="typewriter"></span><span class="cursor"></span>
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#projects" class="btn btn-brand btn-lg"><i class="bi bi-rocket-takeoff me-1"></i> View Projects</a>
+            <a href="resume.pdf" class="btn btn-outline-secondary btn-lg" download>
+              <i class="bi bi-download me-1"></i> Download CV
+            </a>
+            <!-- GitHub button: switched to outline-secondary for visibility in dark mode -->
+            <a class="btn btn-outline-secondary btn-lg" href="https://github.com/username" target="_blank" rel="noopener">
+              <i class="bi bi-github me-1"></i> GitHub
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="https://linkedin.com/in/username" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin me-1"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="row g-3 mt-5">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <i class="bi bi-code-square"></i>
+            <div><h3 class="mb-0">30+</h3><small>Projects</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <i class="bi bi-graph-up"></i>
+            <div><h3 class="mb-0">5</h3><small>Hackathons</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <i class="bi bi-briefcase"></i>
+            <div><h3 class="mb-0">1</h3><small>Industry Role</small></div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <i class="bi bi-patch-check"></i>
+            <div><h3 class="mb-0">3</h3><small>Certifications</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== ABOUT ============== -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-lg-2">
+          <img class="w-100 rounded-4 shadow-soft"
+               src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop"
+               alt="Coding desk">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">About Me</h2>
+          <p class="text-secondary">
+            Passionate CSE student focused on web engineering, system design, and developer tooling.
+            I enjoy shipping clean UI, writing reliable APIs, and solving problems with DSA.
+          </p>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Strong CS fundamentals (DSA, OS, Networks)</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Comfortable with Git, CI/CD, documentation</li>
+            <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Interested in cloud & DevOps</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SKILLS ============== -->
+  <section id="skills" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="skill-block">
+            <div class="d-flex align-items-center mb-1">
+              <i class="bi bi-braces me-2"></i><strong>Programming</strong>
+              <span class="ms-auto small text-secondary">C, C++, Python, JavaScript</span>
+            </div>
+            <div class="skill-bar mb-3"><span style="width:86%"></span></div>
+          </div>
+          <div class="skill-block">
+            <div class="d-flex align-items-center mb-1">
+              <i class="bi bi-window me-2"></i><strong>Frontend</strong>
+              <span class="ms-auto small text-secondary">HTML, CSS, Bootstrap</span>
+            </div>
+            <div class="skill-bar mb-3"><span style="width:92%"></span></div>
+          </div>
+          <div class="skill-block">
+            <div class="d-flex align-items-center mb-1">
+              <i class="bi bi-diagram-3 me-2"></i><strong>CS Fundamentals</strong>
+              <span class="ms-auto small text-secondary">DSA, OS, Networks</span>
+            </div>
+            <div class="skill-bar mb-3"><span style="width:80%"></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-block">
+            <div class="d-flex align-items-center mb-1">
+              <i class="bi bi-hdd-network me-2"></i><strong>Backend</strong>
+              <span class="ms-auto small text-secondary">Node.js, Express</span>
+            </div>
+            <div class="skill-bar mb-3"><span style="width:74%"></span></div>
+          </div>
+          <div class="skill-block">
+            <div class="d-flex align-items-center mb-1">
+              <i class="bi bi-database me-2"></i><strong>Databases</strong>
+              <span class="ms-auto small text-secondary">MySQL, MongoDB</span>
+            </div>
+            <div class="skill-bar mb-3"><span style="width:72%"></span></div>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge tag"><i class="bi bi-git me-1"></i>Git/GitHub</span>
+            <span class="badge tag"><i class="bi bi-shield-lock me-1"></i>Auth/OAuth</span>
+            <span class="badge tag"><i class="bi bi-lightning-charge me-1"></i>REST APIs</span>
+            <span class="badge tag"><i class="bi bi-bug me-1"></i>Testing</span>
+            <span class="badge tag"><i class="bi bi-bootstrap me-1"></i>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROJECTS ============== -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h2 class="section-title mb-0">Projects</h2>
+        <!-- Client-side search -->
+        <div class="input-group w-auto" style="min-width:260px">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="projectSearch" type="search" class="form-control" placeholder="Search projects...">
+        </div>
+      </div>
+
+      <!-- Project grid (first 3 only) -->
+      <div class="row g-4" id="projectGrid">
+        <!-- Software Management System -->
+        <div class="col-md-6 col-lg-4 project-card" data-tags="dashboard admin crud reports analytics">
+          <div class="card h-100 border-0 shadow-soft project-hover">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Software Management System dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Software Management System</h5>
+              <p class="card-text text-secondary small">
+                Admin dashboard for team & license management, reporting, and notifications. Role-based access, audit logs, and exportable analytics.
+              </p>
+              <a class="btn btn-sm btn-brand" href="#"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#"><i class="bi bi-github me-1"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estimation -->
+        <div class="col-md-6 col-lg-4 project-card" data-tags="estimation calculator planning cost pricing">
+          <div class="card h-100 border-0 shadow-soft project-hover">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Estimation tool">
+            <div class="card-body">
+              <h5 class="card-title">Estimation</h5>
+              <p class="card-text text-secondary small">
+                Web-based estimator for cost and resource planning: configurable inputs, scenario comparisons, and PDF/CSV export.
+              </p>
+              <a class="btn btn-sm btn-brand" href="#"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#"><i class="bi bi-github me-1"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eduventure — Study Abroad (Team Lead) -->
+        <div class="col-md-6 col-lg-4 project-card" data-tags="education admissions study-abroad counseling">
+          <div class="card h-100 border-0 shadow-soft project-hover">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.WI14BAQfEIMnoMC6xfq4CAHaEc?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Eduventure study abroad platform">
+            <div class="card-body">
+              <h5 class="card-title">Eduventure — Study Abroad <span class="badge bg-secondary ms-1">Team Lead</span></h5>
+              <p class="card-text text-secondary small">
+                Platform to guide students through applications, scholarships, and visa steps. Built advisor workflows, checklists, and messaging.
+              </p>
+              <a class="btn btn-sm btn-brand" href="#"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#"><i class="bi bi-github me-1"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#projectGrid -->
+    </div>
+  </section>
+
+  <!-- ============== EXPERIENCE ============== -->
+  <section id="experience" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Experience</h2>
+      <ol class="timeline list-unstyled">
+        <!-- Assistant IT — Sattar Group -->
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <h6 class="mb-1">Assistant IT · <span class="text-secondary">Sattar Group of Companies</span></h6>
+          <small class="text-secondary">Motijheel, Dhaka</small>
+          <ul class="mb-0 small text-secondary mt-2 ps-3">
+            <li>End-user and network support; hardware/software troubleshooting.</li>
+            <li>Maintained systems, backups, and IT asset inventory.</li>
+            <li>Assisted with website updates, documentation, and basic automation.</li>
+          </ul>
+        </li>
+
+        <!-- Event Accountant (Contract) -->
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <h6 class="mb-1">Event Accountant · <span class="text-secondary">Café Event (Contract)</span></h6>
+          <small class="text-secondary">Rajshahi</small>
+          <p class="mb-0 small text-secondary mt-2">Cash handling, POS reconciliation, and end-of-day reporting for a high-traffic event.</p>
+        </li>
+
+        <!-- Volunteer — Red Crescent -->
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <h6 class="mb-1">Volunteer · <span class="text-secondary">Bangladesh Red Crescent Society</span></h6>
+          <small class="text-secondary">Outreach & logistics</small>
+          <p class="mb-0 small text-secondary mt-2">Supported distribution, registration, and field coordination.</p>
+        </li>
+
+        <!-- Volunteer — UNICEF -->
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <h6 class="mb-1">Volunteer · <span class="text-secondary">UNICEF</span></h6>
+          <small class="text-secondary">Community programs</small>
+          <p class="mb-0 small text-secondary mt-2">Assisted program activities and community engagement initiatives.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== EDUCATION ============== -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Education</h2>
+      <div class="row g-4">
+        <!-- BSc in CSE -->
+        <div class="col-md-6">
+          <div class="p-4 rounded-4 border h-100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-mortarboard fs-2"></i>
+              <div>
+                <h5 class="mb-1">BSc in Computer Science & Engineering</h5>
+                <small class="text-secondary">Southeast University — Dhaka · Present</small>
+                <p class="small text-secondary mt-2 mb-0">Web Engineering, DSA, OS, DBMS, Computer Networks, Software Engineering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Diploma in Computer Engineering -->
+        <div class="col-md-6">
+          <div class="p-4 rounded-4 border h-100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-cpu fs-2"></i>
+              <div>
+                <h5 class="mb-1">Diploma in Computer Engineering</h5>
+                <small class="text-secondary">Ahsanullah Institute of Technical & Vocational Education — Tejgaon, Dhaka</small>
+                <p class="small text-secondary mt-2 mb-0">Programming, Networks, Hardware, Systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRAINING & COURSES ============== -->
+  <section id="training" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Training & Courses</h2>
+      <div class="row g-4">
+        <!-- Kaizen IT -->
+        <div class="col-md-4">
+          <div class="course-card">
+            <i class="bi bi-brush"></i>
+            <div>
+              <h6 class="mb-1">Web Design & Development</h6>
+              <small class="text-secondary">Kaizen IT — Prantopath, Dhaka</small>
+              <p class="small mb-0 text-secondary mt-1">Responsive sites, Bootstrap, JavaScript, and project workflow.</p>
+            </div>
+          </div>
+        </div>
+        <!-- British Council -->
+        <div class="col-md-4">
+          <div class="course-card">
+            <i class="bi bi-globe2"></i>
+            <div>
+              <h6 class="mb-1">British Council (Online)</h6>
+              <small class="text-secondary">Completed</small>
+              <p class="small mb-0 text-secondary mt-1">Online course completion. (Add specific title when ready.)</p>
+            </div>
+          </div>
+        </div>
+        <!-- ASHRAI -->
+        <div class="col-md-4">
+          <div class="course-card">
+            <i class="bi bi-lightning-charge"></i>
+            <div>
+              <h6 class="mb-1">Electrical Installation & Maintenance</h6>
+              <small class="text-secondary">ASHRAI — Rajshahi</small>
+              <p class="small mb-0 text-secondary mt-1">Installation, maintenance, safety standards, and tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CERTIFICATIONS ============== -->
+  <section id="certs" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Certifications</h2>
+      <div class="row g-4">
+        <!-- BTEB: Electrical I&M -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-soft h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-patch-check-fill fs-2 text-success"></i>
+                <div>
+                  <h6 class="mb-1">BTEB — Electrical Installation & Maintenance</h6>
+                  <small class="text-secondary">Bangladesh Technical Education Board</small>
+                  <p class="small text-secondary mb-0 mt-1">Credential: available upon request</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BTEB: Computer Engineering -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-soft h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-patch-check-fill fs-2 text-success"></i>
+                <div>
+                  <h6 class="mb-1">BTEB — Computer Engineering</h6>
+                  <small class="text-secondary">Bangladesh Technical Education Board</small>
+                  <p class="small text-secondary mb-0 mt-1">Credential: available upon request</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- British Council (Badge) -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-soft h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-award-fill fs-2 text-primary"></i>
+                <div>
+                  <h6 class="mb-1">British Council — Online Course</h6>
+                  <small class="text-secondary">Completed</small>
+                  <p class="small text-secondary mb-0 mt-1">Credential: add certificate ID or link when ready</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- ============== ORGANIZATIONS & CLUBS ============== -->
+  <section id="orgs" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Organizations & Clubs</h2>
+      <div class="row g-4">
+        <!-- Red Crescent -->
+        <div class="col-md-4">
+          <div class="org-card">
+            <i class="bi bi-heart-fill"></i>
+            <div>
+              <h6 class="mb-1">Bangladesh Red Crescent Society</h6>
+              <small class="text-secondary">Volunteer</small>
+              <p class="small mb-0 text-secondary mt-1">Humanitarian support, outreach, and logistics.</p>
+            </div>
+          </div>
+        </div>
+        <!-- UNICEF -->
+        <div class="col-md-4">
+          <div class="org-card">
+            <i class="bi bi-people-fill"></i>
+            <div>
+              <h6 class="mb-1">UNICEF</h6>
+              <small class="text-secondary">Volunteer</small>
+              <p class="small mb-0 text-secondary mt-1">Community activities and program assistance.</p>
+            </div>
+          </div>
+        </div>
+        <!-- University Club -->
+        <div class="col-md-4">
+          <div class="org-card">
+            <i class="bi bi-mortarboard-fill"></i>
+            <div>
+              <h6 class="mb-1">Southeast University CSE Club</h6>
+              <small class="text-secondary">Member</small>
+              <p class="small mb-0 text-secondary mt-1">Workshops, contests, and peer learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section id="contact" class="py-5 section-anchor">
+    <div class="container">
+      <h2 class="section-title mb-3 text-center">Contact</h2>
+      <p class="text-secondary text-center mb-4">Let's talk about internships, projects, or collaborations.</p>
+
+      <div class="row g-4 align-items-start">
+        <!-- Contact info -->
+        <div class="col-12 col-lg-5">
+          <div class="card h-100 border-0 shadow-soft">
+            <div class="card-body p-4 d-flex flex-column gap-3">
+              <a class="contact-line" href="mailto:you@example.com">
+                <i class="bi bi-envelope-fill"></i><span>fahimazadd@.com</span>
+              </a>
+              <a class="contact-line" href="tel:+8801XXXXXXXXX">
+                <i class="bi bi-telephone-fill"></i><span>+880 1777019790</span>
+              </a>
+              <div class="contact-line">
+                <i class="bi bi-geo-alt-fill"></i><span>Dhaka, Bangladesh</span>
+              </div>
+              <div class="contact-line">
+                <i class="bi bi-clock-fill"></i><span>Mon–Fri · 9:00–18:00 (BST)</span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mt-2">
+                <i class="bi bi-share fs-4 text-secondary"></i>
+                <div class="d-flex gap-3 fs-4">
+                  <a class="text-decoration-none" href="https://github.com/username" target="_blank" aria-label="GitHub" rel="noopener"><i class="bi bi-github"></i></a>
+                  <a class="text-decoration-none" href="https://linkedin.com/in/username" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                  <a class="text-decoration-none" href="https://twitter.com/username" target="_blank" aria-label="Twitter/X" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-12 col-lg-7">
+          <div class="card border-0 shadow-soft">
+            <div class="card-body p-4">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Tell me a bit about your project.</div>
+                  </div>
+                </div>
+                <div class="d-grid d-sm-flex gap-2 mt-3">
+                  <button type="submit" class="btn btn-brand">
+                    <i class="bi bi-send me-1"></i> Send Message
+                  </button>
+                  <small class="text-secondary ms-sm-2">I usually reply within 24–48 hours.</small>
+                </div>
+              </form>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small">© <span id="year"></span> MD. FAHIM AZAD. All rights reserved.</p>
+      <div class="d-flex gap-3 fs-5">
+        <a href="#home" class="text-secondary" aria-label="Top"><i class="bi bi-arrow-up-circle"></i></a>
+        <a href="https://github.com/username" target="_blank" class="text-secondary" aria-label="GitHub" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/username" target="_blank" class="text-secondary" aria-label="LinkedIn" rel="noopener"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top FAB -->
+  <button id="toTop" class="btn btn-brand rounded-circle p-0" style="width:48px;height:48px" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Vendor & Site JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
